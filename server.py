@@ -15,7 +15,6 @@ def classify_image():
     response =jsonify(util.classify_image(image_data))
 
     response.headers.add('Access-Control-Allow-Origin', '*')
-    print("--------------------------------------",response)
 
     return response
 
